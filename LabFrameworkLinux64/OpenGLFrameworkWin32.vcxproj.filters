@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="templateFramework.cpp" />
+    <ClCompile Include="templateFrameworkRTT.cpp" />
+    <ClCompile Include="OpenGLFramework\OpenGLFramework.cpp">
+      <Filter>OpenGLFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\Content\ManualObject_PerVertexColour.cpp">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\Content\ManualObject_SingleColour.cpp">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\Content\OpenGLContent.cpp">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\Content\OpenGLManualObject.cpp">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\Content\OpenGLOBJObject.cpp">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\Content\ShadedOBJObjectDirectionalLight.cpp">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\Content\ShadedOBJObjectPointLight.cpp">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\Content\UnitPolygonTextured.cpp">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\FBO\DefaultRenderBufferObject.cpp">
+      <Filter>OpenGLFramework\FBO</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\FBO\RenderBuffer.cpp">
+      <Filter>OpenGLFramework\FBO</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\FBO\RTTRenderBufferObject.cpp">
+      <Filter>OpenGLFramework\FBO</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\common\controls.cpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\common\objloader.cpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\common\quaternion_utils.cpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\common\shader.cpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\common\tangentspace.cpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\common\text2D.cpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\common\texture.cpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLFramework\common\vboindexer.cpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="OpenGLFramework">
+      <UniqueIdentifier>{de5f9f43-403c-4fda-9848-a6741defd1db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGLFramework\Content">
+      <UniqueIdentifier>{0aa53688-43f8-4439-bab7-cec9638ae5ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGLFramework\FBO">
+      <UniqueIdentifier>{467bbec4-529d-41e3-b07b-f788d56caaea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGLFramework\Content\shaders">
+      <UniqueIdentifier>{b45827a1-bed7-49a6-b8b0-fef47950bd66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGLFramework\common">
+      <UniqueIdentifier>{fa8e5b1b-b406-4723-a806-36a216c3fb87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OpenGLFramework\OpenGLFramework.h">
+      <Filter>OpenGLFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\Content\ManualObject_PerVertexColour.h">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\Content\ManualObject_SingleColour.h">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\Content\OpenGLContent.h">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\Content\OpenGLManualObject.h">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\Content\OpenGLOBJObject.h">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\Content\SceneNode.h">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\Content\ShadedOBJObjectDirectionalLight.h">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\Content\ShadedOBJObjectPointLight.h">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\Content\UnitPolygonTextured.h">
+      <Filter>OpenGLFramework\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\FBO\DefaultRenderBufferObject.h">
+      <Filter>OpenGLFramework\FBO</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\FBO\RenderBuffer.h">
+      <Filter>OpenGLFramework\FBO</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\FBO\RTTRenderBufferObject.h">
+      <Filter>OpenGLFramework\FBO</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\common\controls.hpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\common\objloader.hpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\common\quaternion_utils.hpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\common\shader.hpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\common\tangentspace.hpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\common\text2D.hpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\common\texture.hpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLFramework\common\vboindexer.hpp">
+      <Filter>OpenGLFramework\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OpenGLFramework\shaders\ClipSpace_PerVertexColor.vertexshader">
+      <Filter>OpenGLFramework\Content\shaders</Filter>
+    </None>
+    <None Include="OpenGLFramework\shaders\ClipSpaceVertexShader.vertexshader">
+      <Filter>OpenGLFramework\Content\shaders</Filter>
+    </None>
+    <None Include="OpenGLFramework\shaders\ColorFragmentShader.fragmentshader">
+      <Filter>OpenGLFramework\Content\shaders</Filter>
+    </None>
+    <None Include="OpenGLFramework\shaders\DirectionalLightShading.fragmentshader">
+      <Filter>OpenGLFramework\Content\shaders</Filter>
+    </None>
+    <None Include="OpenGLFramework\shaders\DirectionalLightShading.vertexshader">
+      <Filter>OpenGLFramework\Content\shaders</Filter>
+    </None>
+    <None Include="OpenGLFramework\shaders\MVP_PerVertexColor.vertexshader">
+      <Filter>OpenGLFramework\Content\shaders</Filter>
+    </None>
+    <None Include="OpenGLFramework\shaders\MVPVertexShader.vertexshader">
+      <Filter>OpenGLFramework\Content\shaders</Filter>
+    </None>
+    <None Include="OpenGLFramework\shaders\PerVertexColorFragmentShader.fragmentshader">
+      <Filter>OpenGLFramework\Content\shaders</Filter>
+    </None>
+    <None Include="OpenGLFramework\shaders\PointLightShading.fragmentshader">
+      <Filter>OpenGLFramework\Content\shaders</Filter>
+    </None>
+    <None Include="OpenGLFramework\shaders\PointLightShading.vertexshader">
+      <Filter>OpenGLFramework\Content\shaders</Filter>
+    </None>
+    <None Include="OpenGLFramework\shaders\SingleColourFragmentShader.fragmentshader">
+      <Filter>OpenGLFramework\Content\shaders</Filter>
+    </None>
+    <None Include="OpenGLFramework\shaders\TextureFragmentShader.fragmentshader">
+      <Filter>OpenGLFramework\Content\shaders</Filter>
+    </None>
+    <None Include="OpenGLFramework\shaders\TransformVertexShader.vertexshader">
+      <Filter>OpenGLFramework\Content\shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

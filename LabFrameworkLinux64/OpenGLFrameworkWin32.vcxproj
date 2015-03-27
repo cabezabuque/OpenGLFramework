@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C88966D3-53BB-4255-9C3B-8D997CF9EF16}</ProjectGuid>
+    <RootNamespace>OpenGLFrameworkWin32</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\OpenGLFramework\external\include\GLFW;$(ProjectDir)\OpenGLFramework\external\include;$(ProjectDir)\OpenGLFramework\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\OpenGLFramework\external\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;glfw3.lib;GLEW_190.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="OpenGLFramework\common\controls.cpp" />
+    <ClCompile Include="OpenGLFramework\common\objloader.cpp" />
+    <ClCompile Include="OpenGLFramework\common\quaternion_utils.cpp" />
+    <ClCompile Include="OpenGLFramework\common\shader.cpp" />
+    <ClCompile Include="OpenGLFramework\common\tangentspace.cpp" />
+    <ClCompile Include="OpenGLFramework\common\text2D.cpp" />
+    <ClCompile Include="OpenGLFramework\common\texture.cpp" />
+    <ClCompile Include="OpenGLFramework\common\vboindexer.cpp" />
+    <ClCompile Include="OpenGLFramework\Content\ManualObject_PerVertexColour.cpp" />
+    <ClCompile Include="OpenGLFramework\Content\ManualObject_SingleColour.cpp" />
+    <ClCompile Include="OpenGLFramework\Content\OpenGLContent.cpp" />
+    <ClCompile Include="OpenGLFramework\Content\OpenGLManualObject.cpp" />
+    <ClCompile Include="OpenGLFramework\Content\OpenGLOBJObject.cpp" />
+    <ClCompile Include="OpenGLFramework\Content\ShadedOBJObjectDirectionalLight.cpp" />
+    <ClCompile Include="OpenGLFramework\Content\ShadedOBJObjectPointLight.cpp" />
+    <ClCompile Include="OpenGLFramework\Content\UnitPolygonTextured.cpp" />
+    <ClCompile Include="OpenGLFramework\FBO\DefaultRenderBufferObject.cpp" />
+    <ClCompile Include="OpenGLFramework\FBO\RenderBuffer.cpp" />
+    <ClCompile Include="OpenGLFramework\FBO\RTTRenderBufferObject.cpp" />
+    <ClCompile Include="OpenGLFramework\OpenGLFramework.cpp" />
+    <ClCompile Include="templateFramework.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="templateFrameworkRTT.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OpenGLFramework\common\controls.hpp" />
+    <ClInclude Include="OpenGLFramework\common\objloader.hpp" />
+    <ClInclude Include="OpenGLFramework\common\quaternion_utils.hpp" />
+    <ClInclude Include="OpenGLFramework\common\shader.hpp" />
+    <ClInclude Include="OpenGLFramework\common\tangentspace.hpp" />
+    <ClInclude Include="OpenGLFramework\common\text2D.hpp" />
+    <ClInclude Include="OpenGLFramework\common\texture.hpp" />
+    <ClInclude Include="OpenGLFramework\common\vboindexer.hpp" />
+    <ClInclude Include="OpenGLFramework\Content\ManualObject_PerVertexColour.h" />
+    <ClInclude Include="OpenGLFramework\Content\ManualObject_SingleColour.h" />
+    <ClInclude Include="OpenGLFramework\Content\OpenGLContent.h" />
+    <ClInclude Include="OpenGLFramework\Content\OpenGLManualObject.h" />
+    <ClInclude Include="OpenGLFramework\Content\OpenGLOBJObject.h" />
+    <ClInclude Include="OpenGLFramework\Content\SceneNode.h" />
+    <ClInclude Include="OpenGLFramework\Content\ShadedOBJObjectDirectionalLight.h" />
+    <ClInclude Include="OpenGLFramework\Content\ShadedOBJObjectPointLight.h" />
+    <ClInclude Include="OpenGLFramework\Content\UnitPolygonTextured.h" />
+    <ClInclude Include="OpenGLFramework\FBO\DefaultRenderBufferObject.h" />
+    <ClInclude Include="OpenGLFramework\FBO\RenderBuffer.h" />
+    <ClInclude Include="OpenGLFramework\FBO\RTTRenderBufferObject.h" />
+    <ClInclude Include="OpenGLFramework\OpenGLFramework.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OpenGLFramework\shaders\ClipSpaceVertexShader.vertexshader" />
+    <None Include="OpenGLFramework\shaders\ClipSpace_PerVertexColor.vertexshader" />
+    <None Include="OpenGLFramework\shaders\ColorFragmentShader.fragmentshader" />
+    <None Include="OpenGLFramework\shaders\DirectionalLightShading.fragmentshader" />
+    <None Include="OpenGLFramework\shaders\DirectionalLightShading.vertexshader" />
+    <None Include="OpenGLFramework\shaders\MVPVertexShader.vertexshader" />
+    <None Include="OpenGLFramework\shaders\MVP_PerVertexColor.vertexshader" />
+    <None Include="OpenGLFramework\shaders\PerVertexColorFragmentShader.fragmentshader" />
+    <None Include="OpenGLFramework\shaders\PointLightShading.fragmentshader" />
+    <None Include="OpenGLFramework\shaders\PointLightShading.vertexshader" />
+    <None Include="OpenGLFramework\shaders\SingleColourFragmentShader.fragmentshader" />
+    <None Include="OpenGLFramework\shaders\TextureFragmentShader.fragmentshader" />
+    <None Include="OpenGLFramework\shaders\TransformVertexShader.vertexshader" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
